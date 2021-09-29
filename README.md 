@@ -1,1 +1,18 @@
 # Angular App Example
+
+
+# Create example app initially through workflow below
+
+```bash
+ng new
+# name: angularExample
+# all others: default
+```
+
+# Example how to make REST calls to simple paging route
+
+```bash
+curl "http://localhost:5000/sessions?page=2&size=3"
+```
+
+If providing no arguments, will return the full payload (`size=5`, `page=1`)
