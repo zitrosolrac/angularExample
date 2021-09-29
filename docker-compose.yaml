@@ -4,14 +4,14 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: ./frontend/Dockerfile
+      dockerfile: ./frontend_old/Dockerfile
     image: angular_dev:v0.0.0
     environment:
       - SPEAK=hello
     ports:
       - "4200:4200"
     volumes:
-      - ./frontend:/main
+      - ./frontend_old:/main
   backend:
     build:
       context: .
