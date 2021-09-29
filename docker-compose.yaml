@@ -1,0 +1,27 @@
+# docker-compose up --build
+version: '2.4'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    image: angular_dev:v0.0.0
+    environment:
+      - SPEAK=hello
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/main
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    image: flask_dev:v0.0.0
+    environment:
+      - SPEAK=yo
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/main
+  
+    
