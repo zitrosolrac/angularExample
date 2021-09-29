@@ -5,4 +5,6 @@ RUN \
     git config --global user.email "angular@email.com" && \
     git config --global user.name "Angular User"
 WORKDIR /main/angularExample
+COPY ./frontend/angularExample/package.json ./
+RUN npm install
 CMD ["npm", "start"]
