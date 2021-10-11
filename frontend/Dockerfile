@@ -9,5 +9,4 @@ COPY ./frontend/angularExample/package.json ./
 COPY ./frontend/angularExample/tsconfig.app.json ./
 COPY ./frontend/angularExample/src/styles.scss ./src/styles.scss
 RUN npm install
-RUN npm install --save @angular/material @angular/cdk
 CMD ["npm", "start"]

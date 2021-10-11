@@ -16,7 +16,7 @@ services:
       - ./frontend/angularExample/.editorconfig:/main/angularExample/.editorconfig
       - ./frontend/angularExample/angular.json:/main/angularExample/angular.json
       - ./frontend/angularExample/package.json:/main/angularExample/package.json
-      - ./frontend/angularExample/package-lock.json:/main/angularExample/package-lock.json
+     # - ./frontend/angularExample/package-lock.json:/main/angularExample/package-lock.json
       - ./frontend/angularExample/tsconfig.json:/main/angularExample/tsconfig.json
       - ./frontend/angularExample/tslint.json:/main/angularExample/tslint.json
   backend:
